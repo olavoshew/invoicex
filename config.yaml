@@ -1,0 +1,9 @@
+date_format: "%d/%m/%Y"
+
+csv_columns:
+  - filename
+  - vendor
+  - invoice_number
+  - date
+  - total
+  - gst

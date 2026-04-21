@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invoicex"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8",
+    "rich>=13",
+    "python-dotenv>=1",
+    "pdfplumber>=0.10",
+    "pyyaml>=6",
+]
+
+[project.scripts]
+invoicex = "src.cli:cli"
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["."]
